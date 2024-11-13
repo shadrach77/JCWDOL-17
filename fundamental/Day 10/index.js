@@ -117,3 +117,43 @@ function staircasePermutation(n) {
 }
 
 console.log(staircasePermutation(3));
+
+// Triangle Exercises
+
+function regularTriangle(n) {
+  for (let i = 1; i <= n; i++) {
+    console.log("*".repeat(i));
+  }
+}
+
+regularTriangle(3);
+
+console.log("---");
+
+function flippedTriangle(n) {
+  for (let i = 0; i <= n; i++) {
+    console.log(" ".repeat(n - i) + "*".repeat(i));
+  }
+}
+
+flippedTriangle(3);
+
+console.log("---");
+
+function invertedTriangle(n) {
+  for (let i = n; i > 0; i--) {
+    console.log("*".repeat(i));
+  }
+}
+
+invertedTriangle(3);
+
+console.log("---");
+
+function invertedFlippedTriangle(n) {
+  for (let i = n; i > 0; i--) {
+    console.log(" ".repeat(n - i) + "*".repeat(i));
+  }
+}
+
+invertedFlippedTriangle(3);
